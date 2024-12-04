@@ -20,7 +20,7 @@ async function addCompanies(){
     try {
         await pgPool.query(ADD_COMPANIES);
     } catch (error) {   
-        console.log(error.message);   
+        console.log('');   
     }
 }
 
@@ -28,6 +28,6 @@ async function addEmpoyees(){
     try {
         await pgPool.query(ADD_EMPOYEES);
     } catch (error) {   
-        console.log(error.message);   
+        console.log('Cannot add same users again.');   
     }
 }
